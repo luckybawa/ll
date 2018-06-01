@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="admin_MasterPage" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+<title>Read More</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat ="server" >
+<div class="mainNew">
+	<div class="MainHeader">
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+				 <a  href="#"><img src="../images/logo-n.png" style="width: 240px; margin-right: 74px;" /></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav">
+					<li><a href="frmcat.aspx">Categories</a></li>
+					<li><a href="frmsubcat.aspx">SubCategories</a></li>
+					<li><a href="frmexps.aspx">Experts</a></li>
+                    <li><a href="frmexp.aspx">Register Expert</a></li>
+                      <li><a href="frmprd.aspx">Products</a></li>
+                      <li><a href="frmsel.aspx">Sellers</a></li>
+                      <li>
+ <asp:LinkButton ID="lk" runat="server" CausesValidation="false"  Text="Logout" OnClick="lk_Click"></asp:LinkButton>
+                      </li>
+				  </ul>
+				
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="sectionRead1">
+	
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+
+                			
+			</div>
+		</div>
+	</div>
+	 
+	<div class="footerMain">
+		<div class="container">
+		
+		</div>
+	</div>
+</div>
+        	</form>
+</body>
+</html>
+
